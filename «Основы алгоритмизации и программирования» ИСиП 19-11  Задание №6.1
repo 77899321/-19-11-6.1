@@ -1,0 +1,25 @@
+using System;
+using System.Collections;
+
+namespace arrayList
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList list = new ArrayList() { 12, "fef", 5, 7.3, "123ef", "67.qdq", 1418, 89.9, 0.5, "eqwf"};
+
+            foreach (var o in list)
+            {
+                if (o is int) Console.Write(o + " | ");
+            }
+            Console.WriteLine();
+
+            foreach (var o in list)
+            {
+                if (o is double) Console.Write(o + " | ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
